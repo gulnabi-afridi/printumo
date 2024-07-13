@@ -7,63 +7,128 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="w-full grid grid-cols-[250px,calc(100%-250px)]">
+    <div class="w-full flex flex-col">
       <!-- LEFT NAVIGATION ------->
-      <div class="w-full h-[300px] bg-white flex flex-col p-5">
+      <div class="w-[250px] fixed bg-white-1 flex flex-col p-5">
         <img
           src="/assets/logo.svg"
-          class="w-[157px] h-[55px] object-fill"
+          class="w-[157px] left-0 top-0 h-[55px] object-fill"
           alt=""
         />
         <!-- Links  -->
         <div class="w-full flex flex-col gap-5 mt-8 items-start">
           <button
-            onclick="{selectButton(this)}"
-            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+            onclick="selectButton(this)"
+            class="flex justify-start hover:bg-gray-1 pl-8 bg-white-1 w-full h-[52px] rounded-[14px] items-center gap-2"
           >
             <img src="/assets/home.svg" class="w-[24px] h-[24px]" alt="" />
-            <p class="text-base text-black font-semibold">Home</p>
+            <p class="text-base text-black-1 font-semibold">Home</p>
           </button>
           <button
-            onclick="{selectButton(this)}"
-            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+            onclick="selectButton(this)"
+            class="flex justify-start hover:bg-gray-1 pl-8 bg-white-1 w-full h-[52px] rounded-[14px] items-center gap-2"
           >
             <img src="/assets/products.svg" class="w-[24px] h-[24px]" alt="" />
-            <p class="text-base text-black font-normal">Products</p>
+            <p class="text-base text-black-1 font-normal">Products</p>
           </button>
           <button
-            onclick="{selectButton(this)}"
-            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+            onclick="selectButton(this)"
+            class="flex justify-start hover:bg-gray-1 pl-8 bg-white-1 w-full h-[52px] rounded-[14px] items-center gap-2"
           >
             <img src="/assets/orders.svg" class="w-[24px] h-[24px]" alt="" />
-            <p class="text-base text-black font-normal">Orders</p>
+            <p class="text-base text-black-1 font-normal">Orders</p>
           </button>
           <button
-            onclick="{selectButton(this)}"
-            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+            onclick="selectButton(this)"
+            class="flex justify-start hover:bg-gray-1 pl-8 bg-white-1 w-full h-[52px] rounded-[14px] items-center gap-2"
           >
             <img src="/assets/stores.svg" class="w-[24px] h-[24px]" alt="" />
-            <p class="text-base text-black font-normal">Stores</p>
+            <p class="text-base text-black-1 font-normal">Stores</p>
           </button>
           <button
-            onclick="{selectButton(this)}"
-            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+            onclick="selectButton(this)"
+            class="flex justify-start hover:bg-gray-1 pl-8 bg-white-1 w-full h-[52px] rounded-[14px] items-center gap-2"
           >
             <img src="/assets/ana.svg" class="w-[24px] h-[24px]" alt="" />
-            <p class="text-base text-black font-normal">Analytics</p>
+            <p class="text-base text-black-1 font-normal">Analytics</p>
           </button>
         </div>
       </div>
       <!-- RIGHT PORTION  ------>
-      <div class="w-full h-full bg-gray-800"></div>
+      <div class="ml-[250px] px-5 flex flex-col bg-white-1">
+        <!-- top Navibar  -->
+        <div class="w-full flex gap-12 justify-end items-center h-[90px]">
+          <div class="flex justify-center items-center gap-7">
+            <!-- search input -->
+            <div
+              class="w-[480px] h-[42px] justify-center items-center bg-gray-2 rounded-lg grid grid-cols-[1fr,30px]"
+            >
+              <input
+                type="text"
+                name="search"
+                id="search"
+                class="w-full text-base font-normal h-full bg-transparent px-3 focus:outline-none"
+              />
+              <img
+                src="/assets/search.svg"
+                class="w-[20px] h-[20px] object-cover"
+                alt=""
+              />
+            </div>
+            <!--create product button -->
+            <button
+              class="px-6 h-[42px] text-[14px] hover:bg-gray-2 active:-translate-y-[2px] text-black-2 border-[2px] border-white-2 rounded-lg font-semibold"
+            >
+              Create product
+            </button>
+          </div>
+          <div class="flex justify-center items-center gap-7">
+            <img
+              src="/assets/bell.svg"
+              class="w-[24px] cursor-pointer h-[24px] object-cover"
+              alt=""
+            />
+            <img
+              src="/assets/setting.svg"
+              class="w-[24px] cursor-pointer h-[24px] object-cover"
+              alt=""
+            />
+            <img
+              src="/assets/profile.svg"
+              class="w-[42px] cursor-pointer h-[42px] object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- down section -->
+        <div class="w-full flex flex-col bg-gray-2 p-5 rounded-xl">
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="w-fit flex h-[40px] rounded-lg px-2 bg-white-1 justify-center items-center gap-1"
+            >
+              <p class="text-[14px] font-medium text-[#555555]">Sort by:</p>
+              <select class="focus:outline-none text-[14px] font-semibold" name="pets" id="pet-select">
+                <option value="">Default</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Dscending Order">Dscending Order</option>
+              </select>
+            </div>
+            <!-- add product button -->
+            <button class="flex justify-center bg-purple-1 h-[40px] px-3 hover:opacity-80 rounded-lg items-center gap-3">
+              <img src="/assets/plus.svg" class="w-4 h-4" alt="">
+              <p class="text-[14px] font-semibold text-white-1">Add new product </p>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
       function selectButton(button) {
         const buttons = document.querySelectorAll("button");
-        buttons.forEach((btn) => btn.classList.remove("bg-gray"));
+        buttons.forEach((btn) => btn.classList.remove("bg-hoverBg"));
 
-        button.classList.add("bg-gray");
+        button.classList.add("bg-hoverBg");
       }
     </script>
   </body>

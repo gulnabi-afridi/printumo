@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -554,6 +554,22 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.ml-\[250px\] {
+  margin-left: 250px;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -566,12 +582,24 @@ video {
   display: grid;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
 .h-\[24px\] {
   height: 24px;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[42px\] {
+  height: 42px;
 }
 
 .h-\[52px\] {
@@ -582,24 +610,57 @@ video {
   height: 55px;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-full {
   height: 100%;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-\[157px\] {
   width: 157px;
 }
 
+.w-\[20px\] {
+  width: 20px;
+}
+
 .w-\[24px\] {
   width: 24px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[42px\] {
+  width: 42px;
+}
+
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
   width: 100%;
 }
 
-.grid-cols-\[250px\2c calc\(100\%-250px\)\] {
-  grid-template-columns: 250px calc(100% - 250px);
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-\[1fr\2c 30px\] {
+  grid-template-columns: 1fr 30px;
 }
 
 .flex-col {
@@ -618,6 +679,26 @@ video {
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -626,18 +707,62 @@ video {
   gap: 1.25rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .rounded-\[14px\] {
   border-radius: 14px;
 }
 
-.bg-gray {
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border-\[2px\] {
+  border-width: 2px;
+}
+
+.border-white-2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 218 / var(--tw-border-opacity));
+}
+
+.bg-gray-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 250 / var(--tw-bg-opacity));
+}
+
+.bg-hoverBg {
   --tw-bg-opacity: 1;
   background-color: rgb(241 236 255 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white-1 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-purple-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 83 231 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .object-fill {
@@ -649,13 +774,41 @@ video {
   padding: 1.25rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -666,12 +819,46 @@ video {
   font-weight: 600;
 }
 
-.text-black {
+.text-\[\#555555\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.text-black-1 {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:bg-gray:hover {
+.text-black-2 {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.text-white-1 {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:bg-gray-1:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 236 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-2:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 250 / var(--tw-bg-opacity));
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.active\:-translate-y-\[2px\]:active {
+  --tw-translate-y: -2px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
