@@ -582,12 +582,26 @@ video {
   top: 0.75rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .ml-\[250px\] {
   margin-left: 250px;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-8 {
@@ -606,8 +620,20 @@ video {
   height: 1rem;
 }
 
+.h-\[14px\] {
+  height: 14px;
+}
+
+.h-\[15px\] {
+  height: 15px;
+}
+
 .h-\[175px\] {
   height: 175px;
+}
+
+.h-\[1px\] {
+  height: 1px;
 }
 
 .h-\[20px\] {
@@ -624,6 +650,10 @@ video {
 
 .h-\[42px\] {
   height: 42px;
+}
+
+.h-\[48px\] {
+  height: 48px;
 }
 
 .h-\[52px\] {
@@ -646,6 +676,14 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -654,8 +692,16 @@ video {
   width: 157px;
 }
 
+.w-\[160px\] {
+  width: 160px;
+}
+
 .w-\[20px\] {
   width: 20px;
+}
+
+.w-\[22px\] {
+  width: 22px;
 }
 
 .w-\[24px\] {
@@ -687,16 +733,36 @@ video {
   width: 100%;
 }
 
+.max-w-\[440px\] {
+  max-width: 440px;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-\[1fr\2c 1fr\] {
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid-cols-\[1fr\2c 30px\] {
   grid-template-columns: 1fr 30px;
+}
+
+.grid-cols-\[1fr\2c 40px\2c 1fr\] {
+  grid-template-columns: 1fr 40px 1fr;
+}
+
+.grid-cols-\[1fr\2c 40px\] {
+  grid-template-columns: 1fr 40px;
 }
 
 .flex-col {
@@ -743,16 +809,16 @@ video {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .rounded-\[10px\] {
@@ -771,8 +837,17 @@ video {
   border-radius: 0.75rem;
 }
 
+.border-\[1px\] {
+  border-width: 1px;
+}
+
 .border-\[2px\] {
   border-width: 2px;
+}
+
+.border-\[\#E0E0E0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
 }
 
 .border-white-2 {
@@ -787,6 +862,16 @@ video {
 
 .bg-\[\#8F92A11A\] {
   background-color: #8F92A11A;
+}
+
+.bg-\[\#EEEEEE\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F5F5F5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-gray-2 {
@@ -846,11 +931,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .pl-8 {
   padding-left: 2rem;
 }
@@ -863,9 +943,21 @@ video {
   font-size: 14px;
 }
 
+.text-\[32px\] {
+  font-size: 32px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-medium {
@@ -880,9 +972,19 @@ video {
   font-weight: 600;
 }
 
+.text-\[\#1E1F20\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 31 32 / var(--tw-text-opacity));
+}
+
 .text-\[\#555555\] {
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#9E9E9E\] {
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
 }
 
 .text-black-1 {
@@ -895,9 +997,23 @@ video {
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
+.text-black-3 {
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.text-purple-1 {
+  --tw-text-opacity: 1;
+  color: rgb(123 83 231 / var(--tw-text-opacity));
+}
+
 .text-white-1 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .filter {
@@ -907,6 +1023,100 @@ video {
 .hoverBgColor{
   background-color: #F1ECFF;
 }
+
+/* check box styles  */
+
+.checkbox-wrapper-1 *,
+.checkbox-wrapper-1 ::after,
+.checkbox-wrapper-1 ::before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted {
+  margin: 0;
+  width: 0;
+  height: 0;
+  display: inline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  height: 16px;
+  width: 16px;
+  margin-right: 0.6em;
+  color: rgba(0, 0, 0, 0.275);
+  border: solid 0.06em;
+  box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+  border-radius: 0.2em;
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>') no-repeat center, white;
+  background-size: 0;
+  will-change: color, border, background, background-size, box-shadow;
+  transform: translate3d(0, 0, 0);
+  transition: color 0.1s, border 0.1s, background 0.15s, box-shadow 0.1s;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:enabled:active + label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted:enabled + label:active:before {
+  box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset;
+  background-color: #f0f0f0;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:checked + label:before {
+  background-color: #7B53E7;
+  background-size: 0.75em;
+  color: rgba(0, 0, 0, 0.075);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled:active + label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled + label:active:before {
+  background-color: #0a7ffb;
+  color: rgba(0, 0, 0, 0.275);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:focus:active + label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted:focus + label:active:before {
+  box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:disabled + label:before {
+  opacity: 0.5;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark + label:before {
+  color: rgba(255, 255, 255, 0.275);
+  background-color: #222;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="rgba(34, 34, 34, 0.999)" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>');
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled:active + label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled + label:active:before {
+  background-color: #444;
+  box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(255, 255, 255, 0.1) inset;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:checked + label:before {
+  background-color: #a97035;
+  color: rgba(255, 255, 255, 0.075);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled:active + label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled + label:active:before {
+  background-color: #c68035;
+  color: rgba(0, 0, 0, 0.275);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted + label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+/* check box styles ends here */
 
 .hover\:bg-gray-1:hover {
   --tw-bg-opacity: 1;
