@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-full grid grid-cols-[250px,calc(100%-250px)]">
+      <!-- LEFT NAVIGATION ------->
+      <div class="w-full h-[300px] bg-white flex flex-col p-5">
+        <img
+          src="/assets/logo.svg"
+          class="w-[157px] h-[55px] object-fill"
+          alt=""
+        />
+        <!-- Links  -->
+        <div class="w-full flex flex-col gap-5 mt-8 items-start">
+          <button
+            onclick="{selectButton(this)}"
+            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+          >
+            <img src="/assets/home.svg" class="w-[24px] h-[24px]" alt="" />
+            <p class="text-base text-black font-semibold">Home</p>
+          </button>
+          <button
+            onclick="{selectButton(this)}"
+            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+          >
+            <img src="/assets/products.svg" class="w-[24px] h-[24px]" alt="" />
+            <p class="text-base text-black font-normal">Products</p>
+          </button>
+          <button
+            onclick="{selectButton(this)}"
+            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+          >
+            <img src="/assets/orders.svg" class="w-[24px] h-[24px]" alt="" />
+            <p class="text-base text-black font-normal">Orders</p>
+          </button>
+          <button
+            onclick="{selectButton(this)}"
+            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+          >
+            <img src="/assets/stores.svg" class="w-[24px] h-[24px]" alt="" />
+            <p class="text-base text-black font-normal">Stores</p>
+          </button>
+          <button
+            onclick="{selectButton(this)}"
+            class="flex justify-start hover:bg-gray pl-8 bg-white w-full h-[52px] rounded-[14px] items-center gap-2"
+          >
+            <img src="/assets/ana.svg" class="w-[24px] h-[24px]" alt="" />
+            <p class="text-base text-black font-normal">Analytics</p>
+          </button>
+        </div>
+      </div>
+      <!-- RIGHT PORTION  ------>
+      <div class="w-full h-full bg-gray-800"></div>
+    </div>
+
+    <script>
+      function selectButton(button) {
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach((btn) => btn.classList.remove("bg-gray"));
+
+        button.classList.add("bg-gray");
+      }
+    </script>
+  </body>
+</html>
