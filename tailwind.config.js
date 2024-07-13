@@ -9,8 +9,6 @@ module.exports = {
           1:'#F1ECFF',
           2:'#F9F9FA'
         },
-        hoverBg:'#F1ECFF',
-    
         black:{
           1:'#000000',
           2:'#171717'
