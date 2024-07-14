@@ -11,7 +11,6 @@
       { "src": "/signup", "dest": "/src/signup.html" },
       { "src": "/reset-password", "dest": "/src/reset-password.html" },
       { "src": "/signup-with-email", "dest": "/src/signup-with-email.html" },
-
       { "src": "/(.*)", "dest": "/src/$1" }
     ]
   }
