@@ -8,13 +8,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="w-full grid min-h-screen grid-cols-[1fr,1fr]">
+    <div class="w-full grid min-h-screen grid-cols-1 md:grid-cols-[1fr,1fr]">
       <!-- product image -->
-      <div class="w-full h-full bg-gray-2"></div>
+      <div class="w-full h-full md:block hidden bg-gray-2"></div>
       <!-- sign-in-form  -->
       <div class="w-full flex justify-center items-center">
         <div
-          class="w-full h-full gap-3 flex-col flex justify-center items-start max-w-[440px]"
+          class="w-full h-full gap-3 flex-col px-4 py-8 md:py-4 flex justify-center items-start max-w-[470px]"
         >
           <img
             src="/assets/logo.svg"
@@ -106,10 +106,18 @@
                 />
 
                 <img
+                  id="eye-icon"
                   onclick="togglePassword()"
                   src="/assets/eye.svg"
                   class="w-[22px] h-[15px] cursor-pointer"
-                  alt=""
+                  alt="Show Password"
+                />
+                <img
+                  id="close-eye-icon"
+                  onclick="togglePassword()"
+                  src="/assets/closeEye.png"
+                  class="w-[23px] h-[24px] hidden"
+                  alt="Hide Password"
                 />
               </div>
             </div>
@@ -130,12 +138,22 @@
               >
             </div>
             <!-- login button -->
-             <button class="w-full hover:opacity-80 my-3 h-[52px] rounded-lg bg-purple-1 text-[14px] font-medium text-white-1">Login</button>
-             <!-- forgot password  -->
-              <div class="flex justify-start items-center gap-3">
-                <p class="text-[18px] font-normal text-black-3">Forgot your password?</p>
-                <a href="#" class="text-[16px] hover:opacity-80 font-normal text-purple-1 underline" >Reset password</a>
-              </div>
+            <button
+              class="w-full hover:opacity-80 my-3 h-[52px] rounded-lg bg-purple-1 text-[14px] font-medium text-white-1"
+            >
+              Login
+            </button>
+            <!-- forgot password  -->
+            <div class="flex justify-start items-center gap-2">
+              <p class="text-[16px] font-normal text-black-3">
+                Forgot your password?
+              </p>
+              <a
+                href="http://127.0.0.1:5500/src/reset-password.html"
+                class="text-[16px] hover:opacity-80 font-normal text-purple-1 underline"
+                >Reset password</a
+              >
+            </div>
           </form>
         </div>
       </div>
@@ -143,11 +161,18 @@
     <!-- script  -->
     <script>
       function togglePassword() {
-        var x = document.getElementById("password");
-        if (x.type === "password") {
-          x.type = "text";
+        var passwordInput = document.getElementById("password");
+        var eyeIcon = document.getElementById("eye-icon");
+        var closeEyeIcon = document.getElementById("close-eye-icon");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          eyeIcon.classList.add("hidden");
+          closeEyeIcon.classList.remove("hidden");
         } else {
-          x.type = "password";
+          passwordInput.type = "password";
+          eyeIcon.classList.remove("hidden");
+          closeEyeIcon.classList.add("hidden");
         }
       }
     </script>
