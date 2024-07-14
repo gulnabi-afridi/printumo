@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hoverBgColor{
+
+    background-color: #F1ECFF;
+
+}
+
+
+/* drawer styles  */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+.overlay.show {
+  display: block;
+}
+.drawer {
+  transition: transform 0.5s ease;
+  transform: translateX(-300px);
+  z-index: 20;
+}
+.drawer.open {
+  transform: translateX(0);
+}
+@media (min-width: 768px) {
+  .drawer {
+    transform: translateX(0);
+  }
+  .overlay {
+    display: none !important;
+  }
+}
+
+
+/* shadows -------> */
+
+.productCardShadow {
+  box-shadow: 4px 10px 20px 0px #C7C7C71A;
+
+}
