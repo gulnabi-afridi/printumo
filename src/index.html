@@ -156,10 +156,17 @@
           id="empty-section"
           class="w-full min-h-[calc(100vh-60px)] flex-col gap-6 justify-center items-center flex md:min-h-[calc(100vh-90px)] rounded-xl bg-gray-2"
         >
-          <img src="/assets/noProducts.svg" class="w-[235px] sm:w-[350px] h-[235px] sm:h-[350px] object-fill" alt="no-product" />
-          <p class="text-[24px] font-semibold text-black-1">No products here
-          </p>
-          <button class="px-10 sm:px-8 sm:mt-0 mt-8 hover:opacity-80 active:translate-y-[2px] h-[52px] rounded-lg bg-purple-1 text-[14px] font-semibold text-white-1">Create product</button>
+          <img
+            src="/assets/noProducts.svg"
+            class="w-[235px] sm:w-[350px] h-[235px] sm:h-[350px] object-fill"
+            alt="no-product"
+          />
+          <p class="text-[24px] font-semibold text-black-1">No products here</p>
+          <button
+            class="px-10 sm:px-8 sm:mt-0 mt-8 hover:opacity-80 active:translate-y-[2px] h-[52px] rounded-lg bg-purple-1 text-[14px] font-semibold text-white-1"
+          >
+            Create product
+          </button>
         </div>
         <!-- down section -->
         <div
@@ -216,6 +223,7 @@
         buttons.forEach((btn) => btn.classList.remove("hoverBgColor"));
 
         button.classList.add("hoverBgColor");
+        closeDrawer();
       }
 
       document
@@ -241,30 +249,42 @@
 
     <script>
       const products = [
-        // {
-        //   id: 1,
-        //   image: "/assets/product1.svg",
-        //   title: "Blue and Coral Mood",
-        //   description: "Paper poster",
-        // },
-        // {
-        //   id: 2,
-        //   image: "/assets/product2.svg",
-        //   title: "Blue and Coral Mood",
-        //   description: "Paper poster",
-        // },
-        // {
-        //   id: 3,
-        //   image: "/assets/product3.svg",
-        //   title: "Blue and Coral Mood",
-        //   description: "Paper poster",
-        // },
-        // {
-        //   id: 4,
-        //   image: "/assets/product4.svg",
-        //   title: "Blue and Coral Mood",
-        //   description: "Paper poster",
-        // },
+        {
+          id: 1,
+          image: "/assets/product1.svg",
+          title: "Blue and Coral Mood",
+          description: "Paper poster",
+        },
+        {
+          id: 2,
+          image: "/assets/product2.svg",
+          title: "Blue and Coral Mood",
+          description: "Paper poster",
+        },
+        {
+          id: 3,
+          image: "/assets/product3.svg",
+          title: "Blue and Coral Mood",
+          description: "Paper poster",
+        },
+        {
+          id: 4,
+          image: "/assets/product4.svg",
+          title: "Blue and Coral Mood",
+          description: "Paper poster",
+        },
+        {
+          id: 4,
+          image: "/assets/product3.svg",
+          title: "Blue and Coral Mood",
+          description: "Paper poster",
+        },
+        {
+          id: 4,
+          image: "/assets/product1.svg",
+          title: "Blue and Coral Mood",
+          description: "Paper poster",
+        },
       ];
 
       const productContainer = document.querySelector(".product-container");
