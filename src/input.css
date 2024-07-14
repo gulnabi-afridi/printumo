@@ -110,7 +110,7 @@
 }
 .drawer {
   transition: transform 0.5s ease;
-  transform: translateX(-250px);
+  transform: translateX(-300px);
   z-index: 20;
 }
 .drawer.open {

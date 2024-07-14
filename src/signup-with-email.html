@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
 
-    <title>Document</title>
+    <title>Sign Up</title>
   </head>
   <body>
     <div class="w-full grid min-h-screen grid-cols-1 md:grid-cols-[1fr,1fr]">
       <!-- product image -->
-      <div class="w-full h-full md:block hidden bg-gray-2"></div>
+      <div class="w-full h-full py-8 md:block hidden bg-gray-2"></div>
       <!-- sign-in-form  -->
-      <div class="w-full flex justify-center items-center">
+      <div class="w-full py-8 md:py-14 flex justify-center items-center">
         <div
-          class="w-full h-full gap-3 flex-col px-4 py-8 md:py-4 flex justify-center items-start max-w-[470px]"
+          class="w-full h-full gap-3 flex-col px-4 flex justify-center items-start max-w-[470px]"
         >
           <img
             src="/assets/logo.svg"
@@ -22,62 +22,22 @@
             alt=""
           />
           <h3 class="text-[32px] text-black-3 mt-3 font-semibold">
-            Sing In to Printumo
+            Sing Up to Printumo
           </h3>
-          <div class="flex justify-center gap-1 items-center">
-            <p class="text-base font-normal text-black-3">
-              Dont have an account?
-            </p>
-            <a href="http://127.0.0.1:5500/src/signup.html" class="text-purple-1 text-base underline font-normal">Sign up</a>
-          </div>
-          <div class="w-full h-[1px] mt-3 bg-[#EEEEEE]"></div>
-          <div
-            class="w-full grid my-5 grid-cols-3 justify-center items-center gap-2"
-          >
-            <!-- with google -->
-            <a
-              href="#"
-              class="w-full flex justify-center items-center h-[52px] bg-[#F5F5F5] rounded-xl"
-            >
-              <img
-                src="/assets/google.svg"
-                class="w-[22px] h-[14px] object-fill"
-                alt=""
-              />
-            </a>
-            <!-- with facebook -->
-            <a
-              href="#"
-              class="w-full flex justify-center items-center h-[52px] bg-[#F5F5F5] rounded-xl"
-            >
-              <img
-                src="/assets/facebook.svg"
-                class="w-[20px] h-[20px] object-fill"
-                alt=""
-              />
-            </a>
-            <!-- with apple store -->
-            <a
-              href="#"
-              class="w-full flex justify-center items-center h-[52px] bg-[#F5F5F5] rounded-xl"
-            >
-              <img
-                src="/assets/apple.svg"
-                class="w-[20px] h-[20px] object-fill"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="grid w-full justify-center items-center grid-cols-[1fr,40px,1fr]"
-          >
-            <div class="w-full h-[1px] bg-[#EEEEEE]"></div>
-            <div class="w-full flex justify-center items-center">
-              <p class="text-[14px] font-normal text-[#9E9E9E]">Or</p>
-            </div>
-            <div class="w-full h-[1px] bg-[#EEEEEE]"></div>
-          </div>
+
           <form action="" class="w-full flex flex-col gap-5">
+            <!-- full name -->
+            <div class="w-full flex flex-col gap-2">
+              <label class="text-[14px] text-black-3 font-medium" for="name"
+                >Full Name</label
+              >
+              <input
+                class="w-full rounded-lg focus:outline-none px-2 text-[14px] font-normal text-[#1E1F20] h-[48px] border-[1px] border-[#E0E0E0]"
+                type="text"
+                id="name"
+                name="name"
+              />
+            </div>
             <!-- email -->
             <div class="w-full flex flex-col gap-2">
               <label class="text-[14px] text-black-3 font-medium" for="email"
@@ -121,43 +81,47 @@
                 />
               </div>
             </div>
-            <!-- remember me checkbox -->
+            <!-- checkboxes -->
             <div
               class="checkbox-wrapper-1 flex flex-col gap-1 justify-center items-start"
             >
               <input
-                id="remember-me"
+                id="terms"
                 class="substituted"
                 type="checkbox"
                 aria-hidden="true"
               />
-              <label
-                class="text-[12px] font-normal text-black-3"
-                for="remember-me"
-                >Remember me</label
-              >
+              <label class="text-[12px] font-normal text-black-3" for="terms"
+                >I accept the
+                <a href="#" class="underline"> API User Terms </a> and I have
+                read the <a href="#" class="underline">Data Processing Terms</a>
+              </label>
+            </div>
+            <div
+              class="checkbox-wrapper-1 flex flex-col gap-1 justify-center items-start"
+            >
+              <input
+                id="news"
+                class="substituted"
+                type="checkbox"
+                aria-hidden="true"
+              />
+              <label class="text-[12px] font-normal text-black-3" for="news"
+                >I would like to receive news, insights, and best practices from
+                Printumo
+              </label>
             </div>
             <!-- login button -->
             <button
               class="w-full hover:opacity-80 my-3 h-[52px] rounded-lg bg-purple-1 text-[14px] font-medium text-white-1"
             >
-              Login
+              Create Account
             </button>
-            <!-- forgot password  -->
-            <div class="flex justify-start items-center gap-2">
-              <p class="text-[16px] font-normal text-black-3">
-                Forgot your password?
-              </p>
-              <a
-                href="http://127.0.0.1:5500/src/reset-password.html"
-                class="text-[16px] hover:opacity-80 font-normal text-purple-1 underline"
-                >Reset password</a
-              >
-            </div>
           </form>
         </div>
       </div>
     </div>
+
     <!-- script  -->
     <script>
       function togglePassword() {

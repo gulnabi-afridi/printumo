@@ -11,7 +11,7 @@
       <!-- LEFT NAVIGATION ------->
       <div
         id="left-navigation"
-        class="w-[250px] drawer fixed h-screen bg-white-1 justify-between flex flex-col p-5"
+        class="w-[300px] md:w-[250px] drawer fixed  h-screen bg-white-1 justify-start md:justify-between flex flex-col gap-3 md:gap-0 p-5"
       >
         <!-- top section -->
         <div class="flex flex-col">
@@ -21,7 +21,7 @@
             alt=""
           />
           <!-- Links  -->
-          <div class="w-full flex flex-col gap-5 mt-8 items-start">
+          <div class="w-full flex flex-col gap-3 md:gap-5 mt-8 items-start">
             <button
               onclick="selectButton(this)"
               class="flex justify-start hover:bg-gray-1 pl-8 hoverBgColor w-full h-[52px] rounded-[14px] items-center gap-2"
@@ -63,8 +63,9 @@
             </button>
           </div>
         </div>
+        <div class="w-full md:hidden block my-2 h-[1px] bg-[#D7D7D7]"></div>
         <!-- down section -->
-        <div class="w-full flex flex-col gap-4">
+        <div class="w-full flex flex-col gap-3 md:gap-5">
           <button
             onclick="selectButton(this)"
             class="flex justify-start hover:bg-gray-1 pl-8 bg-white-1 w-full h-[52px] rounded-[14px] items-center gap-2"
