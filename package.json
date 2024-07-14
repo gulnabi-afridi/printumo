@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run build:watch\" \"npx http-server ./src\"",
+    "start": "concurrently \"npm run build:watch\" \"lite-server\"",
     "build": "npx tailwindcss -i ./src/styles/input.css -o ./src/output.css",
     "build:watch": "npx tailwindcss -i ./src/styles/input.css -o ./src/output.css --watch"
   },
